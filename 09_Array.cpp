@@ -22,16 +22,16 @@ int main()
         /*
             first iteration :
             i = 1,
-            1 * 2 = 2
+            2 * 1 = 2
             second iteration :
             i = 2,
             2 * 2 = 4
             third iteration :
             i = 3,
-            3 * 2 = 6
+            2 * 3 = 6
             fourth iteration :
             i = 4,
-            4 * 2 = 8
+            2 * 4 = 8
         */
     }
     cout << endl;
