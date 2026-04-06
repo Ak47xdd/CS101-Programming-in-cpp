@@ -4,9 +4,10 @@ using namespace std;
 int main()
 {
     // integers
-    int x;       // 4 bytes : -1234 to 1234
-    long int x;  // 8 bytes : -12345678 to 12345678
-    long long x; // 12 bytes : -123456789123 to 123456789123
+    short int x; // 1 byte : -12 to 12
+    int x;       // 2 bytes : -1234 to 1234
+    long int x;  // 4 bytes : -12345678 to 12345678
+    long long x; // 8 bytes : -123456789123 to 123456789123
 
     // decimals
     float y;  // 4 bytes : -1234.1234 to 1234.1234
