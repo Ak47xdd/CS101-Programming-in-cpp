@@ -22,9 +22,12 @@ int main()
 {
     Calc c1;
 
-    c1.add(1, 2);
     c1.add(1, 2, 3);
+    c1.add(1, 2);
     cout << c1.add(1, 2, 3, 4); // use cout for functions that return a value
+    // or
+    int res = c1.add(1, 2, 3, 4);
+    cout << res << endl;
 
     return 0;
 }
