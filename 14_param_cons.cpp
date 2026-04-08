@@ -7,11 +7,19 @@ public:
     string name;
     string dept;
 
-    A(string n, string d)
+    A(string name, string dept) // Parameterized constructor w/ this pointer
+    {
+        name = this->name; //(var = this->var)
+        dept = this->dept;
+    }
+    // or
+    /*
+    A(string n, string d) // Parameterized constructor with seperate variables
     {
         name = n;
         dept = d;
     }
+    */
     void display()
     {
         cout << "Name : " << name << endl;
@@ -21,7 +29,7 @@ public:
 
 int main()
 {
-    A a1("Akshay", "BCA");
+    A a1("Akshay", "BCA"); // Call the object with obj_name(first_arg, second_arg)
     a1.display();
 
     return 0;
