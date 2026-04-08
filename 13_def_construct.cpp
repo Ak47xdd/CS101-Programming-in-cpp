@@ -8,7 +8,7 @@ public:
     string dept;
 
 public:
-    A()
+    A() // Default constructor, the value cannot be changed once initialized (Class_name(){})
     {
         name = "Akshay";
         dept = "BCA";
@@ -19,8 +19,8 @@ int main()
 {
     A a1;
 
-    cout << "Name : " << a1.name << endl;
-    cout << "Dept : " << a1.dept << endl;
+    cout << "Name : " << a1.name << endl; // "Akshay" is the output
+    cout << "Dept : " << a1.dept << endl; // "BCA" is the output
 
     return 0;
 }
