@@ -16,6 +16,8 @@ public:
 int main()
 {
     B b1; // call the inherited class (B)s
-
+          //            A
+          //            |
+          //            B (Call this class!)
     return 0;
 }
