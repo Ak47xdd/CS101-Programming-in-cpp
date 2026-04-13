@@ -9,8 +9,8 @@ public:
 
     A(string name, string dept) // Parameterized constructor w/ this pointer
     {
-        name = this->name; //(var = this->var)
-        dept = this->dept;
+        this->name = name; //(this->var = var)
+        this->dept = dept;
     }
     // or
     /*
