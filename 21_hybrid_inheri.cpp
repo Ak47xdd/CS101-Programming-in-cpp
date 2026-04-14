@@ -36,3 +36,12 @@ class F : public E
 public:
     string c;
 };
+
+//                                              A
+//                                          B       C
+//                                          |       |
+//                                          C       D
+//                                                  |
+//                                                  E
+//                                                  |
+//                                                  F
