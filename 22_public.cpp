@@ -3,13 +3,13 @@ using namespace std;
 
 class A // base class
 {
-public:
+public: // -> public
     int x;
 
-protected:
+protected: // -> proctected
     int y;
 
-private:
+private: // -> private
     int z;
 
 public:
@@ -21,7 +21,7 @@ public:
     }
 };
 
-class B : public A // derived class
+class B : public A // derived class (public specifier)
 {
     void disp()
     {
@@ -35,8 +35,9 @@ class C : public B
 {
     void disp_2()
     {
-        // cout << "Value of y : " << y << endl; (ERROR)
-        //  cout << "Value of z : " << z << endl; (ERROR)
+        cout << "Value of x : " << x << endl;
+        cout << "Value of y : " << y << endl;
+        // cout << "Value of z : " << z << endl; (ERROR)
     }
 };
 
@@ -46,6 +47,7 @@ B b1; // global instance
 void func()
 {
     cout << "Value of x : " << b1.x << endl;
+    a1.display();
 }
 
 int main()
