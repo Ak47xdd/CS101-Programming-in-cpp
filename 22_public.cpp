@@ -25,9 +25,9 @@ class B : public A // derived class (public specifier)
 {
     void disp()
     {
-        cout << "Value of x : " << x << endl;
-        cout << "Value of y : " << y << endl;
-        // cout << "Value of z : " << z << endl; (ERROR)
+        cout << "Value of x : " << x << endl; // -> public
+        cout << "Value of y : " << y << endl; // -> protected
+        // cout << "Value of z : " << z << endl; (ERROR) -> not accessible
     }
 };
 
