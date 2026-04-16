@@ -18,9 +18,9 @@ class B : protected A
 public:
     void display()
     {
-        cout << "Value of x : " << x << endl;
-        cout << "Value of y : " << y << endl;
-        // cout<<"Value of z : "<<z<<endl;
+        cout << "Value of x : " << x << endl; // -> protected
+        cout << "Value of y : " << y << endl; // -> protected
+        // cout<<"Value of z : "<<z<<endl;    // -> not accessible
     }
 };
 
