@@ -24,9 +24,9 @@ class B : private A
 public:
     void display()
     {
-        cout << "Value of x : " << x << endl;
-        cout << "Value of y : " << y << endl;
-        // cout<<"Value of z : "<<z<<endl;
+        cout << "Value of x : " << x << endl; // -> private
+        cout << "Value of y : " << y << endl; // -> private
+        // cout<<"Value of z : "<<z<<endl; // -> not acessible
     }
 };
 
