@@ -26,7 +26,10 @@ public:
 int main()
 {
     Distance D(20, 30);
-    -D;
+
+    D.display();
+
+    D = -D;
 
     D.display();
 
